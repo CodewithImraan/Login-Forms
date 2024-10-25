@@ -1,24 +1,100 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
-body{
-	height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+button {
+  cursor: pointer;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(36, 34, 34);
 }
 
-.container {
-
-    max-width: 300px ;
-    padding: 20px;
-    height: 200px;
-    background-color: red;
-
+form {
+  height: 300px;
+  width: 300px;
+  border-radius: 2rem;
+  background: rgb(235, 232, 232);
+  padding: 18px;
+  box-shadow: 0 0 25px rgba(232, 235, 236, 0.3);
+  transition: 0.2s ease-in-out;
 }
-form ,input{
-
-
+form:hover {
+  transform: scale(1.03);
+  transition: 0.2s ease-in-out;
 }
+
+form h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgb(66, 61, 61);
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: black;
+  }
+}
+.input-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-box input {
+  font-size: medium;
+  width: 80%;
+  height: 10px;
+  padding: 20px;
+  margin: 14px 0px;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  background: #54545419;
+  box-shadow: inset 2px 2px 3px gray;
+}
+
+.lo-si {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lo-si button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 2px 20px;
+  margin: 15px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  background: rgb(243, 241, 241);
+}
+.lo-si button:hover {
+  background: #373737;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.forget,
+button {
+  display: block;
+  outline: none;
+  border: none;
+  width: 80%;
+  margin: 0 auto;
+  padding: 2px;
+  font-size: 1rem;
+  border-radius: 2rem;
+  background: rgb(243, 241, 241);
+}
+
+.forget > button:hover {
+  background-color: rgb(215, 78, 78);
+  width: 100%;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
